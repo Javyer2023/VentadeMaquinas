@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 *{
-    margin:0;
+    margin:0 ;
     padding: 0;
     box-sizing: border-box;
     font-family:"Noto Sans", sans-serif;
@@ -11,40 +11,53 @@
 
 header {
         
-        background-color: rgba(26, 36, 54, 0.782);
+        
+        background-color: #303232;
         top:0px;
         right: 0px;
         left:0px;
         width: 100%;
-        height: 65px;
-        padding: 15px;
+        height: auto;
+        padding: 15px 10px;
         position: fixed;
         z-index: 1000;
         display:flex;
         justify-content:space-between;
         align-items: center;
+        flex-wrap: wrap;
     
 
     nav{
+        width: auto;
         .listaFlex{
             display: flex;
-            width: 30vw;
+            background-color: rgb(0, 128, 0);
+            width: 100%;
             list-style: none;
             text-decoration:none;
-            justify-content: space-around;
+            justify-content:flex-start;
+            flex-wrap: wrap;
             align-items: center;
             font-size:large;
             
-            a{
-                text-decoration: none;
-                color:rgb(244, 245, 239);
-            }
             
-        }       
+            li {
+                
+                margin: 1em 2em;
+                a{
+                    
+                    display:inline-block;
+                    box-sizing:content-box;
+                    text-decoration: none;
+                    color:rgb(244, 245, 239);
+                }
+            
+            }       
+        }
     }
 
     .logo{
-        width: 230px;
+        width: 15%;
         height: auto;    
         img{
             color:white;
@@ -54,23 +67,14 @@ header {
             
         }
 
-
     }
-        
-        
+           
 }
-
-
-    
-
 
 
 main {
-    padding-top: 65px;
+    padding-top: 4%;
 }
-
-
-
 
 
 h1{
@@ -87,8 +91,6 @@ h2{
     padding:1.5rem;
     text-align: center;
     font-size: 3.5rem;
-    
-
 }
 
 .ofertas {
@@ -106,8 +108,6 @@ h2{
 }
 
 
-
-
 .principal {
     margin-top: auto;
     width: 100%;
@@ -119,16 +119,11 @@ h2{
 }
 
 
-
-
-
 .secciones {
     margin: 1.5rem;
     padding: 2rem;
-    background-color: #ffffff;
+    background-color: #fff;
 }
-
-
 
 
 .productosFlex{
@@ -145,21 +140,46 @@ h2{
     margin:1em;
     padding:1.2em;
     border-style: solid;
-    border-color: rgba(214, 205, 205, 0.91);
-    border-radius: 5px;
+    border-color: hwb(70 64% 34% / 0.91);
+    border-radius: 10px;
     flex-shrink: 1;
+    text-align: center;
 }
 
 .listaReparaciones {
-    width: 100%;
-    margin: 3em;
-    ul {
-        list-style-image:url("../assets/img/circle-dot-regular.svg"); 
-        li{
-            font-size: larger;
-            font-weight: bold;
-            font-style: italic;
-        }    
+    
+    display:flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+
+    img {
+        border-radius: 3em;
+    }
+
+
+    .tarjetaServicioTecnico {
+        display:flex;
+        color: rgb(56, 59, 62);
+        border: 3px solid rgb(192, 192, 197);
+        border-radius: 3em;
+        box-sizing: content-box;
+        background-color:rgb(0, 128, 0);
+
+        ul {
+            list-style-image: url("../circle-chevron-down-solid.svg");
+            li{
+                font-size:2em;
+                font-weight: bold;
+                font-style: italic;
+                color:rgb(244, 245, 239);
+                margin:2em 3em;
+            }
+       
+        }
+    
     }
     
 }
@@ -167,31 +187,36 @@ h2{
 
 .listaFooter {
     display: flex;
+    width: 100%;;
     text-decoration: none;
     list-style: none;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+    a{
+        text-decoration: none;
+                    
+    }
+
 }   
+
+.fa-cart-shopping {
+    display: block;
+    color: rgb(234, 244, 244);
+    font-size: 1.5em;
+}
+.fa-whatsapp{
+
+    color: green;
+    font-size: 2em;
             
-            
-            a{
-                text-decoration: none;
-                
-            }
+}
 
-            .fa-whatsapp{
+.fa-instagram {
 
-                color: green;
-                font-size: 2rem;
-            
-            }
-
-            .fa-instagram {
-
-                color:red;
-                font-size: 2rem;
-            }
-    
-
-
-  
+    color:red;
+     font-size: 2em;
+}           
+           
+   
