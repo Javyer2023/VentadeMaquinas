@@ -55,6 +55,12 @@ header {
                     text-decoration: none;
                     color:rgb(244, 245, 239);
                 }
+
+                a:hover {
+                    color:rgb(128, 171, 95)
+                }
+
+                
             
             }       
         }
@@ -172,10 +178,8 @@ h2{
     column-gap: 50px;
 
         .imgRep {
-                
-                img {
-                    width: 75%;
-                    height: auto;
+                 img {
+                    max-width: 100%;
                     border-style: hidden;
                     border-radius: 50%;
                 }
@@ -183,7 +187,7 @@ h2{
        
 
         .tarjetaServicioTecnico {
-        
+            
             display:flex;
             margin:15px 10px;
             color: rgb(56, 59, 62);
@@ -245,7 +249,22 @@ h2{
                    
     
         }  
-    }    
+    } 
+    
+    #contacto  {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
 
     
     
@@ -273,6 +292,8 @@ footer {
                         
         }
 
+        
+
     }   
 }
 
@@ -280,6 +301,8 @@ footer {
     background-color: rgb(38, 38, 38);
     color:#ffffff;
     padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
     .tarjetaFooter {
         width: auto;
         display: flex;
@@ -296,11 +319,38 @@ footer {
                 text-decoration: none;
                 display: inline-flex;
                 li {
-                    margin: 0 10px;
+                    margin: 0px 10px;
                 }
             }
         }
          
+    }
+
+    .institucional {
+        padding:10px 20px;
+        h4 {
+            margin:20px 0px;
+            font-weight: 800;
+            
+        }
+        ul {
+            display:flex;
+            flex-direction: column;
+            align-items:start;
+            justify-content: space-between;
+            list-style: none;
+            gap: 15px;
+
+            a{
+                text-decoration: none;
+                color:#ffffff;
+            }
+
+            a:hover {
+                color:rgb(128, 171, 95);
+                
+            }
+        }
     }
  }
    
@@ -325,7 +375,7 @@ footer {
      font-size: 2em;
 }           
 
-/*reglas para pantallas pequeñas* continuar con la foto del h1 */
+/*reglas para pantallas pequeñas* aqui estan todas las modificaciones. Use mucho flexbox porque es responsivo y solo cambié algunos detalles*/
 @media only screen and (max-width: 600px){
     header {
         flex-direction: column;
@@ -342,8 +392,6 @@ footer {
         padding: initial auto;
 
 
-
-        
     }
 
     .secciones {
@@ -373,17 +421,18 @@ footer {
         }
 
     }
-
     .imgRep {
-                
-        img {
-            width: 75%;
-            display:inline-block;
-            margin: 0 auto;
-            height: auto;
-            border-style: hidden;
-            border-radius: 50%;
+        max-width:300px;
+    }
+
+    .contenedorFooter {
+        flex-direction: column;
+        .institucional{
+            padding: 20px 0;
         }
+    }
+
+    
 }
-}
+
  
