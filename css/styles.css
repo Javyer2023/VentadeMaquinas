@@ -14,7 +14,7 @@ body  {
 header {
         
         
-        background-color:#262626;
+        background-color:rgb(38, 38, 38);
         top:0px;
         right: 0px;
         left:0px;
@@ -26,7 +26,9 @@ header {
         justify-content:space-between;
         align-items: center;
         flex-wrap: wrap;
-    
+
+       
+        }
 
     nav{
         
@@ -41,6 +43,7 @@ header {
             align-items: center;
             font-size:large;
             
+
             
             li {
                 
@@ -56,24 +59,9 @@ header {
             }       
         }
     }
-    /*arreglar navegacion*/
-    .logo{
-        display: inline-block;
-        border: 2px solid rgb(236, 241, 236);
-        border-radius: 20px;
-        text-align: center;
-        padding:5px 10px;
-        font-size:xx-large;
-        font-weight:bold;
-        color: white;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
-        
-        /*propiedades de box shadow*/
-        box-shadow: 0px 0px 4px 4px rgba(248,250,248,0.49);
-
-
-    }
-}   
+    
+    
+ 
            
 
 main {
@@ -98,12 +86,29 @@ h2{
     font-size: 3.5rem;
 }
 
+.logo{
+    display: inline-block;
+    border: 2px solid rgb(236, 241, 236);
+    border-radius: 20px;
+    text-align: center;
+    padding:5px 10px;
+    font-size:23px;
+    font-weight:bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    
+    /*propiedades de box shadow*/
+    box-shadow: 0px 0px 4px 4px rgba(248,250,248,0.49);
+
+
+}
+
 .ofertas {
     display: flex;
     justify-content:space-around;
     flex-wrap:wrap;
     align-items: center;
-    margin: 80px 0px;
+    margin: 80px auto;
 
     h2{
         box-sizing: border-box;
@@ -114,7 +119,7 @@ h2{
 
 
 .principal {
-    width: 100%;
+    width: 100vw;
     height:80vh;
     background-image:url("../assets/img/backgroundimg.jpg");
     background-repeat: no-repeat;
@@ -124,7 +129,7 @@ h2{
 
 
 .secciones {
-    margin: 1.5em;
+    margin: 1.5em 2em;
     padding: 0 2em;
     background-color: #F2F2F2;
 }
@@ -136,6 +141,7 @@ h2{
     justify-content:space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin: 1.5em 2em;
     gap:0.5em;
 }
 
@@ -166,13 +172,13 @@ h2{
     column-gap: 50px;
 
         .imgRep {
-            img {
-                width: 35vw;
-                height: auto;
-                border-style: hidden;
-                border-radius: 50%;
-            }
-            
+                
+                img {
+                    width: 75%;
+                    height: auto;
+                    border-style: hidden;
+                    border-radius: 50%;
+                }
         }
        
 
@@ -205,21 +211,27 @@ h2{
 
     .reseñas {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         gap: 2em 1.5em;
         flex-wrap: wrap;
+        margin: 0 auto;
 
         p {
-            background-color: #262626;
-            color:#ffffff;
+            background-color: #f7f7f7;
+            width: 500px;
+            border-top: 10px double #D91A1A;
+            border-bottom: 10px double #D91A1A;
+            height: auto;
             font-size: 1.2em;
             font-style: italic;
-            padding: 20px 30px;
-            border:solid;
-            border-radius: 12px;
-            box-shadow: 0px 0px 4px 4px rgba(68, 71, 82, 0.49);
-            
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 10px;
+            padding: 40px 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+                    
         }
 
         p span {
@@ -241,7 +253,7 @@ h2{
 
 footer {
 
-            background-color: white;
+    background-color: white;
             
     h3 {
         text-align: center;
@@ -264,6 +276,37 @@ footer {
     }   
 }
 
+.contenedorFooter {
+    background-color: rgb(38, 38, 38);
+    color:#ffffff;
+    padding: 20px 20px;
+    .tarjetaFooter {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        
+        .contenedorLogoyRedes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            ul {
+                list-style: none;
+                text-decoration: none;
+                display: inline-flex;
+                li {
+                    margin: 0 10px;
+                }
+            }
+        }
+         
+    }
+ }
+   
+
+
+
 
 .fa-cart-shopping {
     color: rgb(234, 244, 244);
@@ -281,5 +324,66 @@ footer {
     color:red;
      font-size: 2em;
 }           
-           
+
+/*reglas para pantallas pequeñas* continuar con la foto del h1 */
+@media only screen and (max-width: 600px){
+    header {
+        flex-direction: column;
+        position: absolute;
+        nav {
+            flex-wrap: nowrap;
+            font-size: medium;
+            
+        }
+    }
+
+    main {
+        margin: 15vh 0;
+        padding: initial auto;
+
+
+
+        
+    }
+
+    .secciones {
+        margin: 0 8px;
+        padding-right: 0;
+        padding-left:0;
+    }
+
+    .ofertas {
+        box-sizing:border-box;
+        padding: 10px 10px;
+    }
+
+    .tarjetaItem {
+        max-width: fit-content;
+    }
+
+    .principal {
+        background-image: none;
+        background-color:#be1010;
+        width:fit-content;
+        height: auto;
+        margin: 0 auto;
+
+        h1 {
+            font-size: xx-large;
+        }
+
+    }
+
+    .imgRep {
+                
+        img {
+            width: 75%;
+            display:inline-block;
+            margin: 0 auto;
+            height: auto;
+            border-style: hidden;
+            border-radius: 50%;
+        }
+}
+}
  
