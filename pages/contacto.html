@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c53f572203.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
@@ -20,41 +21,34 @@
            
 
             <ul class="listaFlex">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
                 <li><a href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>  
         </nav>
         
 </header>
- <main>
+ <main class="mainContacto">
     <section id="contacto" class="secciones">
-            <h2>Contacto</h2>
+            
+        <h2>Contacto</h2>
 
-            <form action="https://formspree.io/f/manyqyrj" method="post">
-                <div>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
+        <form action="https://formspree.io/f/manyqyrj" method="post">
                 
-                <div>
-                    <label for="mail">Correo electrónico</label>
-                    <input type="email" id="mail" name="mail" required>
-                </div>
+                    <label for="nombre">Nombre y Apellido <span>*</span></label>
+                    <input type="text" class="campo" id="nombre" name="nombre" required>
                 
-                <div>
-                    <label for="mensaje">Mensaje</label>
+                    <label for="mail">Correo electrónico <span>*</span></label>
+                    <input type="email" class="campo" id="mail" name="mail" required>
+                                
+                    <label for="mensaje">Mensaje <span>*</span></label>
                     <textarea id="mensaje" name="mensaje" required placeholder="Escriba su mensaje" rows="4" cols="50"></textarea>
-                </div>
                 
-                <div class="boton">
-                    <input type="submit" name="enviar" value="Enviar">
-                </div>
+                    <input type="submit"  class="boton" name="enviar" value="Enviar">
                 
-
-            </form>
-        </section>
+        </form> 
+          
+    </section>
 
  </main> 
  <footer>

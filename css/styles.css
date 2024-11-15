@@ -251,18 +251,56 @@ h2{
         }  
     } 
     
+    
     #contacto  {
-        width: 60vw;
+        width:fit-content;
+        margin:50px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         form {
-            font-size: 20px;
+            background-color: #e6e9e7;
+            border-radius: 10px;
+            border-style: groove;
+            margin:0 auto;
+            padding: 20px 20px;
+            font-size: 17px;
             display: flex;
             flex-direction: column;
-            row-gap: 15px;
+            align-items: stretch;
+            flex-wrap: wrap;
+            row-gap: 5px;
+
+            label span {
+                color:red;
+            }
+
+            .campo {
+                border-radius: 5px;
+                border-style:groove;
+                border-color:rgb(197, 197, 196);
+                width:100%;
+                height: 30px;
+                font-size: 17px;
+            }
+
+            textarea {
+                border: solid rgb(197, 197, 196);
+                border-radius: 5px;
+                font-size: 17px;
+            }
+
+            .boton {
+                margin: 20px auto;
+                width: 50%;
+                height: 4vh; 
+                background-color: #f4efef;
+                border-style:groove;
+                border-color:rgb(197, 197, 196);
+                border-radius: 5px;
+            }
         }
     }
 
@@ -291,8 +329,6 @@ footer {
             text-decoration: none;
                         
         }
-
-        
 
     }   
 }
@@ -432,7 +468,7 @@ footer {
         }
     }
 
-    
+       
 }
 
  
