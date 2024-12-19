@@ -274,7 +274,7 @@ h2{
             row-gap: 5px;
 
             label span {
-                color:red;
+                color:black;
             }
 
             .campo {
@@ -296,6 +296,7 @@ h2{
                 margin: 20px auto;
                 width: 50%;
                 height: 4vh; 
+                font-size: larger;
                 background-color: #f4efef;
                 border-style:groove;
                 border-color:rgb(197, 197, 196);
