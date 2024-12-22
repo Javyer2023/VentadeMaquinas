@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
     <script src="https://kit.fontawesome.com/c53f572203.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <title>Productos</title>
 </head>
-<body>
+<body id="inicio">
 
     <header>
             
@@ -36,61 +37,70 @@
 
                 <div class="tarjetaItem">
                     <img src="../assets/img/k-s-nw8803gmg1300x300.jpg" alt="Maquina Tapacostura kansai-special" loading="lazy">
-                    <p>Kansai Special Tapacostura</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Kansai Special Tapacostura</h3>
+                    <p>1.200.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Kansai Special Tapacostura" data-precio="1200000">
                </div>
     
                <div class="tarjetaItem">
                    <img src="../assets/img/LH3578-300x300.jpg" alt="Maquina Juki Doble aguja" loading="lazy">
-                    <p>Juki Doble aguja LH3578</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Juki Doble aguja LH3578</h3>
+                    <p>700.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Juki Doble aguja LH3578" data-precio="700000">
                </div>
     
                <div class="tarjetaItem">
                     <img src="../assets/img/zoje-zj-737a-504m300x300.jpg" alt="Maquina Overlock Zoje Tres hilos con atraque" loading="lazy">
-                    <p>Overlock zoje-zj-737a 3 hilos con atraque</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Overlock zoje-zj-737a 3 hilos con atraque</h3>
+                    <p>650.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Overlock zoje-zj-737a 3 hilos con atraque" data-precio="650000">
                </div>
     
                <div class="tarjetaItem">
                     <img src="../assets/img/MO6814S-300x300.jpg" alt="Maquina overlock 4 hilos" loading="lazy">
-                    <p>Overlock 4 hilos</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Overlock 4 hilos</h3>
+                    <p>500.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Overlock 4 hilos" data-precio="500000">
                </div>
     
                <div class="tarjetaItem">
                     <img src="../assets/img/Vitto-300x300.jpg" alt="Cortadora circular marca Vito" loading="lazy">
-                    <p>Cortadora Circular Vito</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Cortadora Circular Vito</h3>
+                    <p>250.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Cortadora Circular Vito" data-precio="250000">
                </div>
     
     
                <div class="tarjetaItem">
                    <img src="../assets/img/zoje-zj0628-machine-300x300.jpg" alt="Maquina de coser" loading="lazy">
-                   <p>Zoje Industrial Triple arrastre</p>
-                   <input type="button" value="Precio y Detalle">
+                   <h3>Zoje Industrial Triple arrastre</h3>
+                   <p>900.000<span>$</span></p>
+                   <input type="button" value="Agregar al Carrito" data-nombre="Zoje Industrial Triple arrastre" data-precio="900000">
     
     
                </div>
 
                <div class="tarjetaItem">
                     <img src="../assets/img/NW8803GEMK-1-300x300.jpg" alt="Maquina Kansai Special pegaelastico" loading="lazy">
-                    <p>Pega Elastico kansai-Special NM8803GEMK</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Pega Elastico kansai-Special NM8803GEMK</h3>
+                    <p>1.400.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Pega Elastico kansai-Special NM8803GEMK" data-precio="1400000">
     
                </div>
 
                <div class="tarjetaItem">
                     <img src="../assets/img/LBH1790-1-300x300.jpg" alt="Ojaladora Juki" loading="lazy">
-                    <p>Juki Ojaladora electrónica LBH1790</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Juki Ojaladora electrónica LBH1790</h3>
+                    <p>1.000.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Juki Ojaladora electrónica LBH1790" data-precio="1000000">
     
                </div>
 
                <div class="tarjetaItem">
                     <img src="../assets/img/poste2agujaszojeZJ24028-300x300.jpg" alt="Maquina Poste Zoje" loading="lazy">
-                    <p>Maquina Poste 2 Agujas - Zoje ZJ24028</p>
-                    <input type="button" value="Precio y Detalle">
+                    <h3>Maquina Poste 2 Agujas - Zoje ZJ24028</h3>
+                    <p>880.000<span>$</span></p>
+                    <input type="button" value="Agregar al Carrito" data-nombre="Maquina Poste 2 Agujas - Zoje ZJ24028" data-precio="880000">
     
                </div>
     
@@ -150,18 +160,11 @@
                 </ul>
             </div>
             
-             
-            
     
        </div>
         
-        
-        
-    
-        
-    
-    
     </footer>
-    
-    
-    </html>
+    <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/agregarCarrito.js"></script>
+</body> 
+</html>

@@ -1,26 +1,29 @@
 const formulario = document.querySelector("form");
 formulario.addEventListener("submit", (evento)=>{
     evento.preventDefault();
-    //continuar
+    
     const nombre = document.getElementById("nombre").value.trim();
     const correo = document.getElementById("mail").value.trim();
     const mensaje = document.getElementById("mensaje").value;
     const atributoMail = document.getElementById("mail");
+    //Uso los asteriscos en etiquetas span para cambiar el color  rojo: campo no valido verde:campo validado
     const asteriscos = document.querySelectorAll("span");
 
-    let procesar = false;
-
+    let formulariovalido = false;
+    //valido el input nombre
     if (nombre) {
-        procesar = true;
+        formulariovalido = true;
         asteriscos[0].style.color = "green";
     }
     else {
-        procesar = false;
+        formulariovalido = false;
         asteriscos[0].style.color ="red";
     }
+
+    //valido el campo mail
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(correo)){
-        procesar = false;
+        formulariovalido = false;
         asteriscos[1].style.color ="red";
         
         atributoMail.setAttribute("placeholder", "juanperez@gmail.com");
@@ -34,11 +37,11 @@ formulario.addEventListener("submit", (evento)=>{
     }
     else {
         asteriscos[2].style.color = "red";
-        procesar = false;
+        formulariovalido = false;
         mensaje.placeholder = "Escriba su mensaje mayor a 10 caracteres";
     }
 
-    if (procesar) {
+    if (formulariovalido) {
         Swal.fire({
             title: "Enviado",
             text: "Ingreso de datos exitoso!",
