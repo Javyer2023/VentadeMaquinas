@@ -327,10 +327,7 @@ h2{
 footer {
 
     background-color: white;
-            
-    h3 {
-        text-align: center;
-    }
+        
     padding-top: 2em;
     .listaFooter {
         display: flex;
@@ -404,23 +401,39 @@ footer {
         }
     }
  }
+
+ .containerCarrito {
+   width: 85%;
+   height: auto;
+   margin: 0 auto;
+
+ }
+
+ body> footer>  h3 {
+    color:black;
+    text-align: center;
+    font-size: revert;
+    font-weight: revert;
+    font-family:"Noto Sans", sans-serif;
+ }
    
 .fa-cart-shopping {
-    color: rgb(234, 244, 244);
+    color: rgb(246, 243, 243);
     font-size: 1.5em;
 }
 .fa-whatsapp{
 
-    color: green;
-    font-size: 2em;
+    color: rgba(9, 231, 20, 0.616);
+    font-size: 3em;
             
 }
 
 .fa-instagram {
 
-    color:red;
-     font-size: 2em;
-}           
+   color:rgb(253, 253, 253);
+   font-size:  3em;
+}
+
 
 /*reglas para pantallas pequeñas* aqui estan todas las modificaciones. Use mucho flexbox porque es responsivo y solo cambié algunos detalles*/
 @media only screen and (max-width: 600px){
