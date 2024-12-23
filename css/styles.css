@@ -69,7 +69,6 @@ main {
 
 h1{
     color: rgb(244, 245, 239);
-    font-size:3vw;
     font-weight: 700;
     backdrop-filter:blur(8px);
     padding: 15px;
@@ -412,8 +411,6 @@ footer {
  body> footer>  h3 {
     color:black;
     text-align: center;
-    font-size: revert;
-    font-weight: revert;
     font-family:"Noto Sans", sans-serif;
  }
    
